@@ -28,11 +28,64 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* NavigationBar.css */
+
+/* General styling for the navigation bar */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+   width: 80%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+li a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.btn {
+   padding: 6px 12px;
+   background-color: rgb(139, 226, 136);
+   cursor: pointer;
+   outline: none;
+   border: 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+   
+    justify-content: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+    height: 100vh;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
+
